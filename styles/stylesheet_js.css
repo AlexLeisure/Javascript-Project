@@ -1,3 +1,19 @@
+.grid-wrapper{
+    display:grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: minmax(auto, 50%);
+    grid-auto-flow: row;
+    width:75%;
+    align-items: center;
+    margin:auto;
+    text-align: center;
+}
+
+.g-row{
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
 #player-button {
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1px;
@@ -14,26 +30,24 @@
 }
 
 .navbar-container {
-    display:flex;
     list-style: none;
     background-color: #c47fd8;
-    border-radius: 5px;
-    width: 50%;
-    
+    border-radius: 5px;    
     justify-content: space-evenly;
-    margin:auto;
     
 
 }
 
-.navbar-container li{
+.js-nav-item{
+    display:inline-block;
     padding:18px;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
     font-size:1.3em;
+    text-align: center;
     color:#010B01;
 }
 
-.navbar-container li:hover{
+.js-nav-item:hover{
     background-color: blueviolet;
 }

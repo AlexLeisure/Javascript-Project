@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0.5rem 1rem;
+}
+.grid-container div{
+    display: block;
+    background-color: pink;
+    width: 300px;
+    height:200px;
+}
+
+#box1{
+
+}
+#box2{
+    
+}
+#box3{
+    
+}
+#box4{
+    
+}
+#box5{
+    
+}
+#box6{
+    
+}
+#box7{
+    
+}
+#box8{
+    
+}
+#box9{
+    
+}
+
+
