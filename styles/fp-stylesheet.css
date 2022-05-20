@@ -1,0 +1,57 @@
+body{
+    counter-reset:section;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.grid-container .add-button{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width:70px;
+    height:auto;
+    align-self: flex-end;
+}
+.grid-container .button-container{
+    display:flex;
+    background-color: bisque;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:6;
+}
+#flex-direction-demo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-color: aquamarine;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start:2;
+    grid-row-end:6;
+}
+
+
+
+.flex-direction-item{
+    display:block;
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+    border: 4px solid blue;
+    margin-right:10px;
+}
+.fd-countable::after {
+    counter-increment: section;
+    content: counter(section);
+}
+
+
+
+
+
+
